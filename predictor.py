@@ -3,9 +3,9 @@ from pathlib import Path
 import joblib
 import pandas as pd
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
-MODEL_DIR = BASE_DIR / "model" / "models"
+MODEL_DIR = BASE_DIR
 
 q10_model = joblib.load(MODEL_DIR / "catboost_q10.pkl")
 q50_model = joblib.load(MODEL_DIR / "catboost_q50.pkl")
